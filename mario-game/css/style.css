@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
 }
 body{
     background-color: green;
@@ -9,11 +10,43 @@ body{
 .game-board{
     width: 100%;
     height: 500px;
-    border-bottom:  15px solid green;
+    border-bottom:  3px solid black;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
     background: linear-gradient(#87ceeb, #e0f6ff);
+}
+
+.timer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3px;
+    min-width: 30px;
+}
+
+.separator{
+    padding: 0 5px;
+}
+
+#startBtn{
+    font-size: 12px;
+}
+
+.btn{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid;
+    cursor: pointer;
 }
 
 .pipe{
@@ -45,9 +78,16 @@ body{
     width: 100%;
     bottom: -100px;
     animation: bgclouds-animation 60s infinite linear;
-    background: repeat;
 }
-
+/**
+.goomba{
+    position: absolute;
+    width: 50px;
+    right: -50px;
+    bottom: -5px;
+    animation: goomba-animation 1s infinite linear;
+    animation-delay: 3s;
+}*/
 
 
 @keyframes pipe-animation {
@@ -81,12 +121,20 @@ body{
 
 @keyframes bgclouds-animation {
     from {
-        right:-100%;
+        right:0;
     }
 
     to {
         right: 100%;
     }
 }
+/*
+@keyframes goomba-animation {
+    from {
+        right: 0;
+    }
 
-
+    to{
+        right: 100%;
+    }
+} /*

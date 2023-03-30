@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/script.js" defer></script>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); </style>
 
     <title>Mario Jump</title>
 
@@ -13,11 +14,25 @@
 <body>
 
     <div class="game-board">
+
+        <div class="timer">
+            <button class="btn" id="startBtn">Play</button>
+
+            <div class="time" id="minutes">00</div>
+            <div class="sepatator">:</div>
+            <div class="time" id="seconds">00</div>
+            <div class="sepatator">:</div>
+            <div class="time" id="miliseconds">000</div>
+
+        </div>
+
         <img src="./images/bgclouds.png" class="bgclouds">
         <img src="./images/clouds.png" class="clouds">
         <img src="./images/mario.gif" class="mario">
         <img src="./images/pipe.png" class="pipe">
+        <!-- <img src="./images/goomba.gif" class="goomba"> -->
     </div>
+
 
     
 </body>
